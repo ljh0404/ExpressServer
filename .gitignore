@@ -1,0 +1,13 @@
+# Dependencias
+node_modules/
+
+# Archivos generados durante la ejecución
+.DS_Store
+.env
+
+# Archivo de bloqueo de paquetes
+package-lock.json
+
+# Carpetas de almacenamiento de registros o archivos temporales
+logs/
+temp/
