@@ -1,7 +1,4 @@
-// index.js
-
 const express = require('express');
-// const serveless = require('serveless-http');
 const cors = require('cors');
 const axios = require('axios');
 
@@ -20,19 +17,10 @@ app.get('/api/plants', async (req, res) => {
     }
 });
 
+module.exports = app; // Exporta tu aplicación Express
+
+// Este código de escucha se ejecutará localmente, pero no en Vercel
 app.listen(PORT, () => {
     console.log(`Servidor backend en ejecución en el puerto ${PORT}`);
 });
 
-
-// const express = require('express')
-// const app = express()
-// const port = 3000
-
-// app.get('/hola', (req, res) => {
-//   res.send('Hello World!')
-// })
-
-// app.listen(port, () => {
-//   console.log(`Example app listening on port ${port}`)
-// })
