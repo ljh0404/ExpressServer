@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 
-app.get('/h/', async (req, res) => {
+app.get('/h', async (req, res) => {
     try {
         const response = await axios.get('https://trefle.io/api/v1/plants?token=dFyYL65yF8C_M9Y7ArXytbxj5olI0-Sw7wfmy5klD5o');
         res.json(response.data);
